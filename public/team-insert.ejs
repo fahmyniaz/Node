@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Solent Hackathon</h2>
+      </header>
+      
+      <section>
+        <nav>
+          <ul>
+            <li><a href="/team">See Teams</a></li>
+            
+          </ul>
+        </nav>
+        <article>
+          <h1>Add a team</h1>
+          <form action="/team/add/" method="post" id="form1">
+            <label for="Team ID">Team ID </label>
+            <input type="text" id="Team_ID" name="Team_ID"><br><br>
+            <label for="lname">Name</label>
+            <input type="text" id="Name" name="Name"><br><br>
+            <label for="lname">Project Name</label>
+            <input type="text" id="proName" name="proName"><br><br>
+            <label for="lname">About</label>
+            <input type="text" id="about" name="about"><br><br>
+            <button type="submit" onclick="return confirm('Are you sure you want to add this item?')"> Add</button>
+          </form>
+        </article>
+      </section>
+      
+      <footer>
+        <p>COM710 - Web Technologies</p>
+      </footer>
+</body>
+</html>

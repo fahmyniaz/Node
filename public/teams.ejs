@@ -1,0 +1,60 @@
+
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <title>Teams</title>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="/stylesheet/style.css" />
+               
+        </head>
+        <body>
+          
+            <header>
+                <h2>Solent Hackathon</h2>
+              </header>
+              
+              <section>
+                <nav>
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    
+                  </ul>
+                </nav>
+                <article>
+                  <h1>Registerd Teams</h1>
+                  
+                  <table>
+                    
+                      <tr>
+                        <th>Name</th>
+                        <th>Project</th>
+                        <th>Action</th>
+                      </tr>
+
+                      
+                        <% for (let icount = 0; icount < teamlist.length; icount++){ %>
+                        <tr>
+                          <td>
+                            <%= teamlist[icount].Name %>
+                          </td>
+                          <td>
+                            <%= teamlist[icount].Project_Name %>
+                          </td>
+                          <td>
+                            <a href="/team/<%= teamlist[icount].Team_ID %>">Select</a>
+                          </td>
+                        </tr>
+                        <% } %>  
+                  </table>
+                 </article>
+                 
+              </section>
+              
+              <footer>
+                <p>COM710 - Web Technologies</p>
+              </footer>
+           
+        </body>
+    </html>
